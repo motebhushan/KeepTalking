@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import HomePage from "./components/HomePage";
 import ChatPage from "./components/ChatPage";
 import { ChatProvider } from "./contexts/ChatContext";
+import AnalysisPage from "./components/AnalysisPage";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/chat" element={<ChatPage />} />
+            <Route path="/analyze" element={<AnalysisPage/>}/>
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

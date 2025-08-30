@@ -135,7 +135,7 @@ export const ChatProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   const startConversation = async () => {
 
     setLoading(true);
-    let message="i am learning english so we will talk random topic. give me just small respoce like human with no emoji and also you take the part in conversation like asking question on current conversation"
+    let message="Give me short, natural replies (like a human, not like an AI).Do not use emojis or overly formal language.Actively take part in the conversation by asking me simple follow-up questions related to what I said."
     try {
       const sessionId = getOrCreateSessionId();
 

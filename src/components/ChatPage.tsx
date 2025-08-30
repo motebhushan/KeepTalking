@@ -28,11 +28,11 @@ const ChatPage: React.FC = () => {
             <Button
               variant="ghost"
               size="sm"
-              onClick={() => navigate('/')}
+              onClick={() => navigate('/analyze')}
               className="flex items-center gap-2"
             >
               <ArrowLeft className="h-4 w-4" />
-              Back to Home
+              Analyze your Conversation
             </Button>
             <h1 className="text-2xl font-bold">English Talk Buddy</h1>
           </div>
